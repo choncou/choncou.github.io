@@ -1,0 +1,308 @@
+/*Typed.js*/
+.typed-cursor{
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+/*********************/
+
+* {
+  font-family: 'Inconsolata', monospace;
+  box-sizing: border-box;
+  /*border: 1px red solid;*/
+}
+
+body {
+  margin: 0;
+  background-color: #F5F5F5;
+  color: #333;
+}
+
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/*General*/
+
+hr {
+  border: #448AFF solid 1px;
+  margin: 10px 0;
+}
+
+.clear-float {
+  clear: both;
+}
+
+
+h3 {
+  font-weight: bold;
+}
+
+a {
+  color: #448AFF;
+  text-decoration: none;
+}
+
+.nav-bar {
+  text-align: center;
+}
+
+/*Header*/
+
+.logo-container {
+  text-align: center;
+}
+
+#logo {
+  width: 100%;
+  max-width: 600px;
+}
+
+.btn-social {
+  font-size: 1.5em;
+  padding: 0 5px;
+  -webkit-transition: font-size 100ms, color 100ms;
+  -moz-transition: font-size 100ms, color 100ms;
+  -ms-transition: font-size 100ms, color 100ms;
+  -o-transition: font-size 100ms, color 100ms;
+  transition: font-size 100ms, color 100ms;
+}
+
+.btn-social:hover {
+  font-size: 1.6em;
+  color: #333;
+}
+
+/*Hero*/
+
+.terminal-window {
+
+}
+
+.terminal-header {
+  background-color: #DDD;
+  border-radius: 4px;
+  padding: 5px 10px 10px 10px;
+  top: 4px;
+  position: relative;
+  z-index: -1;
+}
+
+.terminal {
+  color: white;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier", monospace;
+  font-size: 1.1em;
+  background: #30353A;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.btn-terminal {
+  width: 12px;
+  height: 12px;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #333;
+}
+
+.red {
+  background-color: #FC615D;
+}
+
+.yellow {
+  background-color: #FDBC40;
+}
+
+.green {
+  background-color: #34C749;
+}
+
+/* RUBY */
+
+.ruby-code {
+
+}
+
+.ruby-header {
+  color: #859900;
+}
+
+.ruby-variable {
+  color: #B58900;
+}
+
+.ruby-special {
+  color: #2AA198;
+}
+/*Portfolio*/
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.portfolio-header {
+  width: 100%;
+}
+
+.portfolio-item {
+  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  border: #EEE solid 1px;
+  border-radius: 4px;
+  box-shadow: 0 1px 6px #333;
+  margin: 10px 0 0 0;
+  background-color: #FFF;
+}
+
+.portfolio-item:first-of-type {
+  margin: 0;
+}
+
+.portfolio-item-image-container {
+  width: 40%;
+}
+
+.portfolio-item-image{
+  width: 100%;
+  border-radius: 4px;
+}
+
+.portfolio-item-detail {
+  padding: 0 0 0 10px;
+  width: 60%;
+}
+
+.portfolio-item-detail h3 {
+  margin: 0;
+}
+
+.portfolio-item-detail p {
+  margin: 0.5em 0;
+  font-size: 1em;
+}
+
+.portfolio-button-container {
+  text-align: right;
+}
+
+.portfolio-button {
+  background-color: #448AFF;
+  color: #FFF;
+  text-decoration: none;
+  padding: 5px;
+  box-shadow: 1px 1px 4px #333;
+  -webkit-transition: background-color 100ms;
+  -moz-transition: background-color 100ms;
+  -ms-transition: background-color 100ms;
+  -o-transition: background-color 100ms;
+  transition: background-color 100ms;
+}
+
+.portfolio-button:hover {
+  background-color: #333;
+}
+
+/*Press*/
+
+.press {
+
+}
+
+.press-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.press-item {
+  padding: 5px;
+  margin: 0 auto;
+  height: 60px;
+  /*filter: grayscale(70%);*/
+}
+
+.press-item:hover {
+  filter: grayscale(0%);
+}
+
+.press-item a img {
+  /*max-width: 150px;*/
+  max-height: 100%;
+}
+
+/*Footer*/
+
+footer {
+  text-align: center;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 400px){
+  .portfolio-item-detail p {
+    margin: 0.3em 0;
+    font-size: 0.85em;
+  }
+
+  .portfolio-item-detail a {
+    font-size: 0.85em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .portfolio-item,
+  .portfolio-item:first-of-type {
+    width: calc((100% / 2) - 20px);
+    max-width: 300px;
+    height: 450px;
+    margin: 5px auto;
+  }
+
+  .portfolio-item-image-container {
+    width: 100%;
+  }
+
+  .portfolio-item-detail {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/*Animations*/
+
+/* The animation code */
+@keyframes show-colour {
+  from {
+    filter: grayscale(100%);
+  }
+  to {
+    filter: grayscale(0%);
+  }
+}
